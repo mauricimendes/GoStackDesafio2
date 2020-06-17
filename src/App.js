@@ -5,7 +5,6 @@ import "./styles.css"
 function App() {
 
 	const [repositories, setRepositories] = useState([])
-	const [deleteRepository, setDeleteRepository] = useState(false)
 
 	useEffect(() => {
 		api.get('repositories').then(response => {
